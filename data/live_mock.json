@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "state": "Maharashtra",
+    "election_type": "Vidhan Sabha",
+    "status": "Completed",
+    "date": "Nov 20, 2024",
+    "phases_total": 1,
+    "phases_done": 1,
+    "description": "The Mahayuti alliance (NDA) won a landslide majority in Maharashtra.",
+    "phase_dates": ["Nov 20, 2024"],
+    "last_updated": "2024-11-25 10:00 AM"
+  },
+  {
+    "id": 2,
+    "state": "Jharkhand",
+    "election_type": "Vidhan Sabha",
+    "status": "Completed",
+    "date": "Nov 2024",
+    "phases_total": 2,
+    "phases_done": 2,
+    "description": "The JMM-led INDIA alliance retained power in Jharkhand.",
+    "phase_dates": ["Nov 13, 2024", "Nov 20, 2024"],
+    "last_updated": "2024-11-25 10:00 AM"
+  },
+  {
+    "id": 3,
+    "state": "India",
+    "election_type": "Lok Sabha",
+    "status": "Completed",
+    "date": "Apr-Jun 2024",
+    "phases_total": 7,
+    "phases_done": 7,
+    "description": "NDA won 293 seats; BJP won 240 seats, becoming the largest single party.",
+    "phase_dates": ["Apr 19", "Apr 26", "May 7", "May 13", "May 20", "May 25", "Jun 1"],
+    "last_updated": "2024-06-05 10:00 AM"
+  },
+  {
+    "id": 4,
+    "state": "Haryana",
+    "election_type": "Vidhan Sabha",
+    "status": "Completed",
+    "date": "Oct 5, 2024",
+    "phases_total": 1,
+    "phases_done": 1,
+    "description": "BJP won a third consecutive term in Haryana.",
+    "phase_dates": ["Oct 5, 2024"],
+    "last_updated": "2024-10-10 10:00 AM"
+  },
+  {
+    "id": 5,
+    "state": "Delhi",
+    "election_type": "Vidhan Sabha",
+    "status": "Upcoming",
+    "data_type": "mock_projected",
+    "date": "Feb 2025",
+    "phases_total": 1,
+    "phases_done": 0,
+    "description": "General elections for the Delhi Legislative Assembly expected in early 2025.",
+    "phase_dates": ["Feb 2025"],
+    "last_updated": "2024-12-01 10:00 AM"
+  },
+  {
+    "id": 6,
+    "state": "Bihar",
+    "election_type": "Vidhan Sabha",
+    "status": "Upcoming",
+    "data_type": "mock_projected",
+    "date": "Nov 2025",
+    "phases_total": 3,
+    "phases_done": 0,
+    "description": "Bihar state assembly elections projected for late 2025.",
+    "phase_dates": ["Nov 2025"],
+    "last_updated": "2024-12-01 10:00 AM"
+  }
+]

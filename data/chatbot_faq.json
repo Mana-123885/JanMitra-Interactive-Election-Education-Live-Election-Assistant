@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "keywords": ["register", "registration", "voter id", "form 6", "nvsp", "enroll", "new voter"],
+    "question": "How do I register to vote?",
+    "answer": "To register as a new voter, you must fill Form 6. You can do this online at the National Voters' Service Portal (voters.eci.gov.in) or via the Voter Helpline App. You will need proof of age and address. A Booth Level Officer (BLO) will then verify your details before your name is added to the Electoral Roll.",
+    "category": "Registration"
+  },
+  {
+    "id": 2,
+    "keywords": ["check name", "voter list", "am i registered", "electoralsearch", "find name", "roll"],
+    "question": "How can I check if my name is in the voter list?",
+    "answer": "You can check your name on the official ECI website: electoralsearch.eci.gov.in. You can search by your EPIC number (Voter ID number) or by entering your details (Name, Age, State, District). Alternatively, you can SMS 'ECI <EPIC Number>' to 1950.",
+    "category": "Registration"
+  },
+  {
+    "id": 3,
+    "keywords": ["lok sabha", "lower house", "parliament", "people's house"],
+    "question": "What is the Lok Sabha?",
+    "answer": "The Lok Sabha is the Lower House of India's Parliament. It has 543 elected members who are directly chosen by the people through general elections. The term of the Lok Sabha is 5 years, unless dissolved earlier. It is the house where the government is formed.",
+    "category": "Elections"
+  },
+  {
+    "id": 4,
+    "keywords": ["vidhan sabha", "state assembly", "state legislature", "mla", "assembly"],
+    "question": "What is a Vidhan Sabha?",
+    "answer": "Vidhan Sabha (State Legislative Assembly) is the lower house of a state legislature. Members (MLAs) are directly elected by voters of the state. The party or alliance with a majority in the Vidhan Sabha forms the state government headed by the Chief Minister.",
+    "category": "Elections"
+  },
+  {
+    "id": 5,
+    "keywords": ["rajya sabha", "upper house", "council of states", "indirect"],
+    "question": "What is the Rajya Sabha?",
+    "answer": "The Rajya Sabha is the Upper House of Parliament. It represents states and union territories. It is a permanent house and never dissolves. Members serve 6-year terms, with 1/3 members retiring every 2 years. They are elected indirectly by members of State Legislative Assemblies.",
+    "category": "Elections"
+  },
+  {
+    "id": 6,
+    "keywords": ["mla", "mp", "difference", "member of parliament", "member of assembly"],
+    "question": "What is the difference between an MP and an MLA?",
+    "answer": "An MP (Member of Parliament) is elected to the Lok Sabha or Rajya Sabha and works at the national level. An MLA (Member of Legislative Assembly) is elected to the state's Vidhan Sabha and works at the state level. One MP constituency usually contains multiple MLA constituencies.",
+    "category": "Elections"
+  },
+  {
+    "id": 7,
+    "keywords": ["prime minister", "pm", "how pm", "who becomes pm", "form government"],
+    "question": "How is the Prime Minister chosen?",
+    "answer": "The PM is not directly elected by citizens. Citizens vote for their local MP. The President of India invites the leader of the party or alliance that wins a majority (272+ seats) in the Lok Sabha to form the government and become the Prime Minister.",
+    "category": "Leaders"
+  },
+  {
+    "id": 8,
+    "keywords": ["chief minister", "cm", "state government", "governor"],
+    "question": "How is a Chief Minister chosen?",
+    "answer": "The CM is appointed by the Governor of the state. The Governor invites the leader of the party or alliance that commands a majority in the Vidhan Sabha to form the government. Citizens vote for their local MLA to determine this majority.",
+    "category": "Leaders"
+  },
+  {
+    "id": 9,
+    "keywords": ["evm", "electronic voting machine", "voting machine", "hack evm"],
+    "question": "What is an EVM?",
+    "answer": "Electronic Voting Machine (EVM) is a device used to record votes electronically. It consists of a Ballot Unit and a Control Unit. EVMs are standalone machines with no internet, WiFi, or Bluetooth connectivity, making them secure from remote hacking.",
+    "category": "Technology"
+  },
+  {
+    "id": 10,
+    "keywords": ["vvpat", "paper trail", "paper slip", "verify vote"],
+    "question": "What is VVPAT?",
+    "answer": "Voter Verified Paper Audit Trail (VVPAT) is an independent printer system attached to the EVM. It allows voters to verify that their vote was cast correctly by showing a paper slip with the candidate's name and symbol for 7 seconds before it drops into a sealed box.",
+    "category": "Technology"
+  },
+  {
+    "id": 11,
+    "keywords": ["nota", "none of the above", "reject all", "nota meaning"],
+    "question": "What is NOTA?",
+    "answer": "NOTA (None Of The Above) is an option on the EVM that allows a voter to officially record their rejection of all candidates. However, even if NOTA gets the most votes, the candidate with the next highest number of votes is declared the winner.",
+    "category": "Voting"
+  },
+  {
+    "id": 12,
+    "keywords": ["documents", "bring to vote", "what to carry", "id proof", "alternatives to voter id"],
+    "question": "What documents can I carry to vote?",
+    "answer": "You should carry your Voter ID (EPIC). If not available, ECI accepts 12 alternatives: Aadhaar Card, MGNREGA Job Card, Passbooks with photo, Health Insurance Smart Card, Driving License, PAN Card, Passport, Pension document, etc.",
+    "category": "Voting"
+  },
+  {
+    "id": 13,
+    "keywords": ["mcc", "model code", "code of conduct", "election rules"],
+    "question": "What is the Model Code of Conduct?",
+    "answer": "MCC is a set of guidelines issued by the ECI for political parties and candidates during elections. It ensures fair play and prevents the ruling party from using government resources for campaigning. It starts from the date of election announcement.",
+    "category": "Rules"
+  },
+  {
+    "id": 14,
+    "keywords": ["silent period", "campaign blackout", "48 hours", "section 126"],
+    "question": "What is the Silent Period?",
+    "answer": "The silent period is a 48-hour campaign blackout before the end of polling. No rallies, public meetings, or advertisements are allowed during this time to allow voters to reflect peacefully. It is mandated by Section 126 of the RPA 1951.",
+    "category": "Rules"
+  },
+  {
+    "id": 15,
+    "keywords": ["announcement", "schedule", "election date", "phases"],
+    "question": "How are elections announced?",
+    "answer": "ECI announces the schedule through a press conference. It includes dates for notifications, nominations, scrutiny, withdrawal, polling, and counting. Elections are often held in multiple phases for security and management.",
+    "category": "Elections"
+  },
+  {
+    "id": 16,
+    "keywords": ["nomination", "file nomination", "candidate", "form 26", "affidavit"],
+    "question": "How does a candidate file nomination?",
+    "answer": "A candidate must file nomination papers with the Returning Officer and submit an affidavit (Form 26) disclosing their assets, criminal cases, and education. They also pay a security deposit of ₹25,000 for Lok Sabha seats.",
+    "category": "Candidates"
+  },
+  {
+    "id": 17,
+    "keywords": ["why vote again", "multiple elections", "different elections"],
+    "question": "Why do we have so many elections?",
+    "answer": "India is a federal democracy with three tiers of government: Central (Lok Sabha), State (Vidhan Sabha), and Local (Panchayats/Municipalities). Each has separate elections every 5 years (unless dissolved earlier).",
+    "category": "Basics"
+  },
+  {
+    "id": 18,
+    "keywords": ["constituency", "area", "seat", "what is constituency"],
+    "question": "What is a constituency?",
+    "answer": "A constituency is a specific geographical area whose voters elect a single representative to a legislative body. There are 543 Lok Sabha constituencies in India.",
+    "category": "Basics"
+  },
+  {
+    "id": 19,
+    "keywords": ["counting", "result", "vote counting", "how counted", "election result"],
+    "question": "How are votes counted?",
+    "answer": "On counting day, EVMs are opened in presence of counting agents. Postal ballots are counted first. Results are tabulated round-by-round and updated live on the ECI website (results.eci.gov.in).",
+    "category": "Elections"
+  },
+  {
+    "id": 20,
+    "keywords": ["coalition", "alliance", "hung parliament", "coalition government"],
+    "question": "What is a coalition government?",
+    "answer": "When no single party wins an outright majority (272+ seats), multiple parties may form an alliance to reach the majority number and form a coalition government.",
+    "category": "Leaders"
+  },
+  {
+    "id": 21,
+    "keywords": ["by-election", "upchunav", "bye election", "byelection", "vacancy"],
+    "question": "What is a by-election?",
+    "answer": "A by-election is held to fill a single seat that falls vacant due to the death, resignation, or disqualification of an elected member before their term ends.",
+    "category": "Elections"
+  },
+  {
+    "id": 22,
+    "keywords": ["anti defection", "party switch", "10th schedule", "defection"],
+    "question": "What is the Anti-Defection Law?",
+    "answer": "The 10th Schedule of the Constitution prevents elected members from switching parties after election without specific legal conditions. Defecting can lead to disqualification from the house.",
+    "category": "Rules"
+  },
+  {
+    "id": 23,
+    "keywords": ["president", "president india", "president role", "rashtrapati"],
+    "question": "What is the role of the President?",
+    "answer": "The President is the constitutional head of India and Supreme Commander of the Armed Forces. The President appoints the PM and other officials but generally acts on the advice of the Council of Ministers.",
+    "category": "Leaders"
+  },
+  {
+    "id": 24,
+    "keywords": ["update address", "moved house", "change address", "form 8", "new address"],
+    "question": "How do I update my address in the voter list?",
+    "answer": "If you move house, you must fill Form 8 (Shifted to another place) on the NVSP portal. This will transfer your name from your old constituency's list to the new one.",
+    "category": "Registration"
+  },
+  {
+    "id": 25,
+    "keywords": ["lost voter id", "lost epic", "replace voter id", "new voter id card", "duplicate"],
+    "question": "What if I lost my Voter ID card?",
+    "answer": "You can apply for a replacement Voter ID card (EPIC) by filling Form 8 on the NVSP portal. You will receive a new card by post or can download an e-EPIC if available.",
+    "category": "Registration"
+  },
+  {
+    "id": 26,
+    "keywords": ["blo", "booth level officer", "blo visit", "verify details"],
+    "question": "Who is a BLO?",
+    "answer": "A Booth Level Officer (BLO) is a local government official responsible for maintaining the voter list for a specific booth. They verify your details door-to-door for registration and updates.",
+    "category": "Registration"
+  },
+  {
+    "id": 27,
+    "keywords": ["money", "expenditure", "spending limit", "campaign money", "₹95 lakh"],
+    "question": "Is there a limit on campaign spending?",
+    "answer": "Yes. A candidate for Lok Sabha can spend up to ₹95 lakh (in large states). For Vidhan Sabha, the limit is ₹40 lakh. Parties themselves do not have a fixed spending limit but must report expenses to ECI.",
+    "category": "Rules"
+  },
+  {
+    "id": 28,
+    "keywords": ["exit poll", "opinion poll", "poll prediction", "exit survey"],
+    "question": "What is an exit poll?",
+    "answer": "An exit poll is a survey conducted immediately after voters leave the polling station. ECI bans the publication of exit polls until the last phase of voting is completed.",
+    "category": "Elections"
+  },
+  {
+    "id": 29,
+    "keywords": ["floor test", "trust vote", "confidence vote", "prove majority"],
+    "question": "What is a floor test?",
+    "answer": "A floor test is a mechanism where a PM or CM must prove they have the support of the majority of members in the legislature through a vote of confidence.",
+    "category": "Leaders"
+  },
+  {
+    "id": 30,
+    "keywords": ["president's rule", "central rule", "article 356", "governor's rule"],
+    "question": "What is President's Rule?",
+    "answer": "Under Article 356, the President can take over the governance of a state if the constitutional machinery fails. The state government is dismissed and the Governor runs the state on behalf of the Centre.",
+    "category": "Leaders"
+  },
+  {
+    "id": 31,
+    "keywords": ["complain", "violation", "mcc violation", "cvigil", "report", "complaint"],
+    "question": "How do I report an election violation?",
+    "answer": "You can use the 'cVigil' app by ECI to report MCC violations like bribery or hate speech. You can also call the National Election Helpline at 1950.",
+    "category": "Rules"
+  },
+  {
+    "id": 32,
+    "keywords": ["postal ballot", "vote by post", "army vote", "absentee voting"],
+    "question": "Who can use a postal ballot?",
+    "answer": "Postal ballots are for service voters (armed forces), election duty staff, and in some cases, senior citizens (80+) or disabled voters who cannot reach the booth.",
+    "category": "Voting"
+  },
+  {
+    "id": 33,
+    "keywords": ["candidate dies", "death", "election cancelled", "death of candidate"],
+    "question": "What happens if a candidate dies?",
+    "answer": "If a candidate from a recognized party dies before polling, the ECI may adjourn the poll in that constituency to allow the party to nominate a new candidate.",
+    "category": "Elections"
+  },
+  {
+    "id": 34,
+    "keywords": ["helpline", "1950", "contact eci", "phone number eci", "voter helpline"],
+    "question": "What is the voter helpline number?",
+    "answer": "The National Voter Helpline number is 1950. You can call this for any election-related information or complaints.",
+    "category": "Basics"
+  },
+  {
+    "id": 35,
+    "keywords": ["electoral bond", "party funding", "donation", "political funding"],
+    "question": "What are electoral bonds?",
+    "answer": "Electoral bonds were instruments for anonymous political donations. However, the Supreme Court of India struck down the scheme as unconstitutional in February 2024.",
+    "category": "Rules"
+  }
+]

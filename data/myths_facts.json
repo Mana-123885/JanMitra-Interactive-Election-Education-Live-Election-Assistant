@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "myth": "Voters directly elect the Prime Minister of India.",
+    "fact": "Citizens elect their local Member of Parliament (MP). The party or alliance with a majority in the Lok Sabha then chooses their leader to be appointed as PM by the President.",
+    "category": "Leaders",
+    "xp_reward": 5
+  },
+  {
+    "id": 2,
+    "myth": "All Indian elections (National, State, Local) happen on the same day.",
+    "fact": "No, they usually happen separately based on when the 5-year term of that specific body ends. There are discussions about 'One Nation, One Election', but it's not current law.",
+    "category": "Basics",
+    "xp_reward": 5
+  },
+  {
+    "id": 3,
+    "myth": "Missing one election removes you from the voter list forever.",
+    "fact": "Your name remains on the Electoral Roll unless you move, die, or are disqualified. You can vote in the next election as long as you are registered.",
+    "category": "Registration",
+    "xp_reward": 5
+  },
+  {
+    "id": 4,
+    "myth": "If NOTA wins, the election is cancelled and re-held.",
+    "fact": "Under current rules, even if NOTA gets the highest votes, the candidate with the next highest number of votes is declared the winner. NOTA is for expressing dissent.",
+    "category": "Voting",
+    "xp_reward": 5
+  },
+  {
+    "id": 5,
+    "myth": "Rajya Sabha members are elected directly by the people.",
+    "fact": "Rajya Sabha members are elected indirectly by the elected members of State Legislative Assemblies (MLAs). 12 members are nominated by the President.",
+    "category": "Elections",
+    "xp_reward": 5
+  },
+  {
+    "id": 6,
+    "myth": "EVMs can be hacked via WiFi or Bluetooth.",
+    "fact": "EVMs are standalone machines with no wireless communication hardware. They cannot be networked and have no internet connectivity.",
+    "category": "Technology",
+    "xp_reward": 5
+  },
+  {
+    "id": 7,
+    "myth": "The richest candidate always wins the election.",
+    "fact": "While money can influence campaigning, many candidates with fewer resources have won based on their work and popularity. ECI also enforces spending limits.",
+    "category": "Candidates",
+    "xp_reward": 5
+  },
+  {
+    "id": 8,
+    "myth": "Voting is compulsory by law in India.",
+    "fact": "Voting is a fundamental right and a civic duty, but it is not legally compulsory. There is no fine for not voting, though everyone is encouraged to participate.",
+    "category": "Voting",
+    "xp_reward": 5
+  },
+  {
+    "id": 9,
+    "myth": "MP and MLA mean the same thing.",
+    "fact": "MPs work in the national Parliament, while MLAs work in the State Legislative Assembly. They have different roles and different constituencies.",
+    "category": "Elections",
+    "xp_reward": 5
+  },
+  {
+    "id": 10,
+    "myth": "The party with the most total votes always forms the government.",
+    "fact": "In India's FPTP system, the party with the most SEATS forms the government, not necessarily the one with the highest percentage of total votes polled.",
+    "category": "Leaders",
+    "xp_reward": 5
+  },
+  {
+    "id": 11,
+    "myth": "The President of India runs the daily government.",
+    "fact": "The President is the constitutional head, but the daily administration is run by the Council of Ministers headed by the Prime Minister.",
+    "category": "Leaders",
+    "xp_reward": 5
+  },
+  {
+    "id": 12,
+    "myth": "The Prime Minister appoints the Chief Ministers of states.",
+    "fact": "The Governor of each state appoints the CM based on the majority in that state's Vidhan Sabha. The PM has no constitutional role in this.",
+    "category": "Leaders",
+    "xp_reward": 5
+  },
+  {
+    "id": 13,
+    "myth": "You absolutely need a physical Voter ID card to vote.",
+    "fact": "If your name is in the Electoral Roll, you can vote by showing any of the 12 approved documents like Aadhaar, Passport, or PAN card.",
+    "category": "Voting",
+    "xp_reward": 5
+  },
+  {
+    "id": 14,
+    "myth": "ECI is a department under the central government.",
+    "fact": "The Election Commission of India is an independent constitutional body. It is not controlled by any ministry and its independence is protected by law.",
+    "category": "Basics",
+    "xp_reward": 5
+  },
+  {
+    "id": 15,
+    "myth": "Only educated people or taxpayers can vote in India.",
+    "fact": "India follows 'Universal Adult Franchise'. Every citizen aged 18 or above has an equal right to vote, regardless of education, wealth, or gender.",
+    "category": "Basics",
+    "xp_reward": 5
+  },
+  {
+    "id": 16,
+    "myth": "A by-election means the previous election was illegal.",
+    "fact": "By-elections happen when a seat becomes vacant due to the death or resignation of a member. It doesn't mean the original election was invalid.",
+    "category": "Elections",
+    "xp_reward": 5
+  },
+  {
+    "id": 17,
+    "myth": "You can vote in any booth as long as you have a Voter ID.",
+    "fact": "You can ONLY vote at the specific polling station where your name is registered in the Electoral Roll.",
+    "category": "Voting",
+    "xp_reward": 5
+  },
+  {
+    "id": 18,
+    "myth": "Silent period means no political posts on social media by anyone.",
+    "fact": "The law prohibits public meetings and media ads by candidates/parties. While personal posts are complex to regulate, major platforms adhere to ECI guidelines.",
+    "category": "Rules",
+    "xp_reward": 5
+  }
+]

@@ -1,0 +1,351 @@
+[
+  {
+    "stage_id": 1,
+    "name": "Voter Registration",
+    "name_hi": "मतदाता पंजीकरण",
+    "name_mr": "मतदार नोंदणी",
+    "emoji": "🌱",
+    "color": "#92400E",
+    "xp_reward": 20,
+    "simple_explanation": "To vote in India, your name must be on the Electoral Roll. You can register online at voters.eci.gov.in using Form 6.",
+    "simple_hi": "भारत में वोट देने के लिए, आपका नाम मतदाता सूची में होना चाहिए। आप फॉर्म 6 का उपयोग करके voters.eci.gov.in पर ऑनलाइन पंजीकरण कर सकते हैं।",
+    "simple_mr": "भारतात मतदान करण्यासाठी तुमचे नाव मतदार यादीत असणे आवश्यक आहे. तुम्ही फॉर्म ६ वापरून voters.eci.gov.in वर ऑनलाइन नोंदणी करू शकता.",
+    "detailed_explanation": "The Electoral Roll is a comprehensive database maintained by the Election Commission of India listing all eligible voters in each polling area. New voters fill Form 6 on the National Voters' Service Portal (NVSP). Once approved, you receive your Elector's Photo Identity Card (EPIC). The roll is updated regularly, with major revisions typically around January 1st each year.",
+    "why_it_matters": "Without your name on the Electoral Roll, you legally cannot vote — even if you are a citizen. Registering is the first and most essential step in exercising your democratic right.",
+    "common_doubt_q": "I turned 18 last month. Can I vote in the upcoming election?",
+    "common_doubt_a": "Yes, if you register before the cutoff. The qualifying dates are January 1st, April 1st, July 1st, and October 1st. Apply well in advance as verification takes 2-4 weeks.",
+    "key_facts": [
+      "Form 6 is for new voter registration",
+      "EPIC card = Elector's Photo Identity Card (Voter ID)",
+      "voters.eci.gov.in is the official NVSP portal",
+      "BLO = Booth Level Officer who verifies your details",
+      "Electoral Roll is updated with January 1 as qualifying date"
+    ],
+    "connected_to": "Stage 2: Electoral Roll",
+    "mini_quiz": {
+      "question": "What form must a new voter fill to register?",
+      "options": ["Form 6", "Form 7", "Form 8", "Form 16"],
+      "correct": 0,
+      "explanation": "Form 6 is the application form for inclusion in the Electoral Roll for new voters. Form 7 is for deletion, Form 8 for corrections."
+    }
+  },
+  {
+    "stage_id": 2,
+    "name": "Electoral Roll & EPIC Card",
+    "name_hi": "मतदाता सूची और मतदाता पहचान पत्र",
+    "name_mr": "मतदार सूची आणि मतदार ओळखपत्र",
+    "emoji": "📇",
+    "color": "#BE185D",
+    "xp_reward": 20,
+    "simple_explanation": "The Electoral Roll is the list of all voters. The EPIC card is your voter ID.",
+    "simple_hi": "मतदाता सूची सभी मतदाताओं की सूची है। EPIC कार्ड आपका मतदाता पहचान पत्र है।",
+    "simple_mr": "मतदार यादी ही सर्व मतदारांची यादी आहे. EPIC कार्ड हे तुमचे मतदार ओळखपत्र आहे.",
+    "detailed_explanation": "The Electoral Roll (also called Voter List) is organized by polling booth (typically 1,500 voters per booth). The EPIC card carries your photo, name, EPIC number, and constituency details. Even with your EPIC card, if your name is not on the roll for your current address, you may be turned away.",
+    "why_it_matters": "The Electoral Roll determines who can vote in each booth. Always verify your name on the roll before election day at electoralsearch.eci.gov.in.",
+    "common_doubt_q": "Can I vote if I have a Voter ID but my name is not in the list?",
+    "common_doubt_a": "No. Your name MUST be in the Electoral Roll of that specific polling station to cast a vote.",
+    "key_facts": [
+      "Voter List is updated annually",
+      "One booth = approx 1,500 voters",
+      "EPIC is a valid ID proof for many services",
+      "electoralsearch.eci.gov.in is where you check your name"
+    ],
+    "connected_to": "Stage 3: Election Announcement",
+    "mini_quiz": {
+      "question": "How many voters are typically assigned to one polling booth?",
+      "options": ["500", "1,500", "5,000", "10,000"],
+      "correct": 1,
+      "explanation": "Each polling booth is typically assigned approximately 1,500 voters to manage polling day efficiently."
+    }
+  },
+  {
+    "stage_id": 3,
+    "name": "Election Announcement",
+    "name_hi": "चुनाव की घोषणा",
+    "name_mr": "निवडणुकीची घोषणा",
+    "emoji": "📢",
+    "color": "#7C3AED",
+    "xp_reward": 20,
+    "simple_explanation": "ECI announces the schedule, which triggers the Model Code of Conduct.",
+    "simple_hi": "ECI चुनाव कार्यक्रम की घोषणा करता है, जो आदर्श आचार संहिता को सक्रिय करता है।",
+    "simple_mr": "निवडणूक आयोग वेळापत्रक जाहीर करतो, ज्यामुळे आचारसंहिता लागू होते.",
+    "detailed_explanation": "General Elections are announced by the ECI through a Press Note. This triggers the Model Code of Conduct (MCC) immediately. The announcement includes dates for nominations, scrutiny, withdrawal, polling, and counting.",
+    "why_it_matters": "The announcement marks the start of the official election process and restricts government actions that could influence voters.",
+    "common_doubt_q": "When does the Model Code of Conduct start?",
+    "common_doubt_a": "It starts immediately from the moment ECI announces the election schedule.",
+    "key_facts": [
+      "MCC triggers on announcement",
+      "Schedule includes notification and polling dates",
+      "Lok Sabha 2024 had 7 phases",
+      "Announcement is at least 3 weeks before first polling"
+    ],
+    "connected_to": "Stage 4: Nomination Filing",
+    "mini_quiz": {
+      "question": "What is triggered immediately when the election schedule is announced?",
+      "options": ["Campaigning begins", "Model Code of Conduct comes into force", "Nominations open", "Polling starts"],
+      "correct": 1,
+      "explanation": "The Model Code of Conduct (MCC) comes into force the moment the election schedule is announced by the ECI."
+    }
+  },
+  {
+    "stage_id": 4,
+    "name": "Nomination Filing",
+    "name_hi": "नामांकन दाखिल करना",
+    "name_mr": "नामांकन दाखल करणे",
+    "emoji": "📝",
+    "color": "#4C1D95",
+    "xp_reward": 20,
+    "simple_explanation": "Candidates file their papers and pay a security deposit.",
+    "simple_hi": "उम्मीदवार अपने कागजात दाखिल करते हैं और सुरक्षा राशि जमा करते हैं।",
+    "simple_mr": "उमेदवार त्यांची कागदपत्रे दाखल करतात आणि अनामत रक्कम भरतात.",
+    "detailed_explanation": "Any citizen (25+ for Lok Sabha) can file nomination with the Returning Officer. They must submit an affidavit (Form 26) disclosing criminal records, assets, and education. A security deposit of ₹25,000 (₹12,500 for SC/ST) is required.",
+    "why_it_matters": "The affidavit allows voters to make an informed choice by knowing the candidate's background.",
+    "common_doubt_q": "What is the minimum age to contest Lok Sabha?",
+    "common_doubt_a": "The minimum age is 25 years for Lok Sabha and Vidhan Sabha.",
+    "key_facts": [
+      "Form 26 is the candidate's affidavit",
+      "Security deposit is ₹25,000 for Lok Sabha",
+      "1 proposer needed for party candidates",
+      "Age: 25 for LS, 30 for RS"
+    ],
+    "connected_to": "Stage 5: Scrutiny",
+    "mini_quiz": {
+      "question": "What is the minimum age to contest a Lok Sabha election?",
+      "options": ["18 years", "21 years", "25 years", "30 years"],
+      "correct": 2,
+      "explanation": "Article 84(b) states that a candidate for Lok Sabha must be at least 25 years old."
+    }
+  },
+  {
+    "stage_id": 5,
+    "name": "Scrutiny of Nominations",
+    "name_hi": "नामांकन की जांच",
+    "name_mr": "नामांकन पत्रांची छाननी",
+    "emoji": "🔍",
+    "color": "#059669",
+    "xp_reward": 20,
+    "simple_explanation": "The Returning Officer checks if nomination papers are valid.",
+    "simple_hi": "रिटर्निंग ऑफिसर जांचता है कि नामांकन पत्र वैध हैं या नहीं।",
+    "simple_mr": "निवडणूक निर्णय अधिकारी नामांकन पत्रे वैध आहेत की नाही हे तपासतात.",
+    "detailed_explanation": "The RO examines every nomination to ensure the candidate is qualified and the forms are complete. Disqualifications include prison sentences of 2+ years, holding office of profit, or being of unsound mind.",
+    "why_it_matters": "Scrutiny ensures that only legally eligible candidates enter the election fray.",
+    "common_doubt_q": "Who conducts the scrutiny?",
+    "common_doubt_a": "The Returning Officer (RO), who is typically a senior government official.",
+    "key_facts": [
+      "RO can reject incomplete forms",
+      "Candidates can object to others' papers",
+      "Scrutiny happens on a fixed date",
+      "Rejected candidates can appeal to High Court"
+    ],
+    "connected_to": "Stage 6: Withdrawal",
+    "mini_quiz": {
+      "question": "Who conducts the scrutiny of nomination papers?",
+      "options": ["Prime Minister", "Chief Election Commissioner", "Returning Officer", "District Collector"],
+      "correct": 2,
+      "explanation": "The Returning Officer (RO) is responsible for conducting scrutiny of nominations."
+    }
+  },
+  {
+    "stage_id": 6,
+    "name": "Withdrawal of Candidacy",
+    "name_hi": "नामांकन वापसी",
+    "name_mr": "उमेदवारी अर्ज मागे घेणे",
+    "emoji": "↩️",
+    "color": "#D97706",
+    "xp_reward": 20,
+    "simple_explanation": "Candidates can choose to withdraw their name from the election.",
+    "simple_hi": "उम्मीदवार चुनाव से अपना नाम वापस लेने का विकल्प चुन सकते हैं।",
+    "simple_mr": "उमेदवार निवडणुकीतून आपले नाव मागे घेण्याचा पर्याय निवडू शकतात.",
+    "detailed_explanation": "There is a 2-day window for candidates to withdraw. Once withdrawn, it is irrevocable. After this, symbols are allotted and the final list of candidates is published.",
+    "why_it_matters": "The final list determines the names and symbols that will appear on the EVM.",
+    "common_doubt_q": "Can a candidate re-enter after withdrawing?",
+    "common_doubt_a": "No. Once a candidate withdraws, it is final and irrevocable for that election.",
+    "key_facts": [
+      "2-day window for withdrawal",
+      "Symbols allotted after withdrawal",
+      "National parties have reserved symbols",
+      "Final list published as Form 7A"
+    ],
+    "connected_to": "Stage 7: Campaigning",
+    "mini_quiz": {
+      "question": "Can a candidate withdraw their candidacy after the withdrawal deadline?",
+      "options": ["Yes, with ECI permission", "Yes, with court order", "No, withdrawal is irrevocable", "Yes, within 24 hours"],
+      "correct": 2,
+      "explanation": "Once the withdrawal deadline passes, no candidate can withdraw. The final candidate list is published."
+    }
+  },
+  {
+    "stage_id": 7,
+    "name": "Election Campaigning",
+    "name_hi": "चुनाव प्रचार",
+    "name_mr": "निवडणूक प्रचार",
+    "emoji": "🎤",
+    "color": "#6B21A8",
+    "xp_reward": 20,
+    "simple_explanation": "Candidates reach out to voters through rallies and advertisements.",
+    "simple_hi": "उम्मीदवार रैलियों और विज्ञापनों के माध्यम से मतदाताओं तक पहुँचते हैं।",
+    "simple_mr": "उमेदवार रॅली आणि जाहिरातींच्या माध्यमातून मतदारांपर्यंत पोहोचतात.",
+    "detailed_explanation": "Campaigning includes rallies, door-to-door visits, and social media. MCC rules apply: no use of government resources, no hate speech, and strict spending limits (₹95 lakh for Lok Sabha).",
+    "why_it_matters": "Campaigning is how voters learn about different candidates' visions and manifestos.",
+    "common_doubt_q": "Is there a limit on how much a candidate can spend?",
+    "common_doubt_a": "Yes. As of 2022, the limit is ₹95 lakh for Lok Sabha and ₹40 lakh for Vidhan Sabha candidates.",
+    "key_facts": [
+      "No campaigning 48 hours before poll ends",
+      "Spending limit: ₹95 lakh (LS)",
+      "Paid news is monitored by ECI",
+      "Election Observers check expenses"
+    ],
+    "connected_to": "Stage 8: Model Code of Conduct",
+    "mini_quiz": {
+      "question": "What is the maximum campaign expenditure limit for a Lok Sabha candidate (2022)?",
+      "options": ["₹40 lakh", "₹70 lakh", "₹95 lakh", "₹1.5 crore"],
+      "correct": 2,
+      "explanation": "ECI revised the expenditure limit to ₹95 lakh for Lok Sabha candidates in January 2022."
+    }
+  },
+  {
+    "stage_id": 8,
+    "name": "Model Code of Conduct",
+    "name_hi": "आदर्श आचार संहिता",
+    "name_mr": "आदर्श आचारसंहिता",
+    "emoji": "📜",
+    "color": "#DC2626",
+    "xp_reward": 20,
+    "simple_explanation": "Rules that parties must follow to ensure fair elections.",
+    "simple_hi": "नियम जिनका दलों को निष्पक्ष चुनाव सुनिश्चित करने के लिए पालन करना चाहिए।",
+    "simple_mr": "निवडणुका निष्पक्ष व्हाव्यात यासाठी पक्षांनी पाळायचे नियम.",
+    "detailed_explanation": "MCC prevents ruling parties from using government machinery for campaigning. No new schemes can be announced. It ensures a 'level playing field' for all candidates.",
+    "why_it_matters": "MCC prevents abuse of power and ensures that elections are free and fair.",
+    "common_doubt_q": "Is MCC a law passed by Parliament?",
+    "common_doubt_a": "No, it is a consensus-based set of guidelines issued by ECI, but enforced strictly through executive action.",
+    "key_facts": [
+      "Ensures level playing field",
+      "Prevents government from announcing new projects",
+      "Applies to candidates and parties",
+      "Ends on result declaration day"
+    ],
+    "connected_to": "Stage 9: Silent Period",
+    "mini_quiz": {
+      "question": "When does the Model Code of Conduct come into force?",
+      "options": ["One week before polling", "On the day of nomination", "From the day of election announcement", "On polling day"],
+      "correct": 2,
+      "explanation": "The MCC comes into force immediately from the date ECI announces the election schedule."
+    }
+  },
+  {
+    "stage_id": 9,
+    "name": "Silent Period",
+    "name_hi": "मौन काल",
+    "name_mr": "मौन काळ",
+    "emoji": "🤫",
+    "color": "#3B1F6B",
+    "xp_reward": 20,
+    "simple_explanation": "A 48-hour blackout on campaigning before polling ends.",
+    "simple_hi": "मतदान समाप्त होने से 48 घंटे पहले प्रचार पर रोक।",
+    "simple_mr": "मतदान संपण्यापूर्वी ४८ तास प्रचारावर बंदी.",
+    "detailed_explanation": "Under Section 126 of RPA 1951, active campaigning stops 48 hours before polling ends. This gives voters a 'silent period' to think calmly before voting.",
+    "why_it_matters": "It prevents last-minute influence or communal tension right before voting.",
+    "common_doubt_q": "Does this apply to social media?",
+    "common_doubt_a": "Yes, electronic media is restricted, and ECI has guidelines for social media platforms too.",
+    "key_facts": [
+      "Duration: 48 hours",
+      "Mandated by RPA 1951 Section 126",
+      "No rallies or public meetings",
+      "Applies to multi-phase elections phase-wise"
+    ],
+    "connected_to": "Stage 10: Polling Day",
+    "mini_quiz": {
+      "question": "Under which law is the 48-hour campaign blackout mandated?",
+      "options": ["Constitution Art 324", "RPA 1951 Section 126", "Model Code of Conduct", "Indian Penal Code"],
+      "correct": 1,
+      "explanation": "Section 126 of the Representation of the People Act, 1951 prohibits public meetings during the 48 hours preceding the close of polling."
+    }
+  },
+  {
+    "stage_id": 10,
+    "name": "Polling Day",
+    "name_hi": "मतदान दिवस",
+    "name_mr": "मतदानाचा दिवस",
+    "emoji": "🗳️",
+    "color": "#059669",
+    "xp_reward": 20,
+    "simple_explanation": "Voters go to the booth, get marked with ink, and cast their vote.",
+    "simple_hi": "मतदाता बूथ पर जाते हैं, स्याही लगवाते हैं और अपना वोट डालते हैं।",
+    "simple_mr": "मतदार बूथवर जातात, शाई लावून घेतात आणि मतदान करतात.",
+    "detailed_explanation": "Voters carry ID, get verified, receive indelible ink on the left index finger, and press the button on the EVM. VVPAT shows the slip for 7 seconds to confirm the vote.",
+    "why_it_matters": "This is the core of democracy — where the citizen exercises their power to choose their representative.",
+    "common_doubt_q": "What if I don't have my Voter ID card?",
+    "common_doubt_a": "You can use any of the 12 alternative documents like Aadhaar, Passport, or PAN card if your name is in the roll.",
+    "key_facts": [
+      "VVPAT slip visible for 7 seconds",
+      "Indelible ink on left index finger",
+      "12 alternative IDs accepted",
+      "Secret ballot is protected"
+    ],
+    "connected_to": "Stage 11: Counting Day",
+    "mini_quiz": {
+      "question": "For how many seconds is the VVPAT slip visible to the voter?",
+      "options": ["3 seconds", "5 seconds", "7 seconds", "10 seconds"],
+      "correct": 2,
+      "explanation": "The VVPAT slip is visible to the voter for 7 seconds through the transparent window."
+    }
+  },
+  {
+    "stage_id": 11,
+    "name": "Counting Day",
+    "name_hi": "मतगणना दिवस",
+    "name_mr": "मतमोजणीचा दिवस",
+    "emoji": "📊",
+    "color": "#4C1D95",
+    "xp_reward": 20,
+    "simple_explanation": "Votes from all EVMs are counted and results are declared.",
+    "simple_hi": "सभी EVM के वोटों की गिनती की जाती है और परिणाम घोषित किए जाते हैं।",
+    "simple_mr": "सर्व ईव्हीएममधील मतांची मोजणी केली जाते आणि निकाल जाहीर केले जातात.",
+    "detailed_explanation": "Counting is done under RO supervision. Postal ballots are counted first, then EVM votes round by round. India uses the First-Past-The-Post (FPTP) system.",
+    "why_it_matters": "Counting translates the will of the voters into a final result.",
+    "common_doubt_q": "What is First-Past-The-Post?",
+    "common_doubt_a": "It means the candidate with the most votes wins, even if they don't have more than 50% of the total votes.",
+    "key_facts": [
+      "Postal ballots counted first",
+      "FPTP system determines winner",
+      "Live results on results.eci.gov.in",
+      "Counting agents monitor the process"
+    ],
+    "connected_to": "Stage 12: Government Formation",
+    "mini_quiz": {
+      "question": "What voting system does India use to determine the winner in Lok Sabha?",
+      "options": ["Proportional Representation", "Two-round system", "First-Past-The-Post (FPTP)", "Alternative Vote"],
+      "correct": 2,
+      "explanation": "India uses FPTP — the candidate with the most votes in a constituency wins."
+    }
+  },
+  {
+    "stage_id": 12,
+    "name": "Results & Government Formation",
+    "name_hi": "परिणाम और सरकार गठन",
+    "name_mr": "निकाल आणि सरकार स्थापन",
+    "emoji": "🏛️",
+    "color": "#1E1B4B",
+    "xp_reward": 20,
+    "simple_explanation": "The party with 272+ seats forms the central government.",
+    "simple_hi": "272+ सीटों वाला दल केंद्र सरकार बनाता है।",
+    "simple_mr": "२७२+ जागा मिळवणारा पक्ष केंद्र सरकार स्थापन करतो.",
+    "detailed_explanation": "For Lok Sabha, a party/alliance needs 272/543 seats for a majority. The President invites the majority leader to become PM. If no majority, a coalition or hung parliament occurs.",
+    "why_it_matters": "This completes the democratic cycle, resulting in a representative government for the next 5 years.",
+    "common_doubt_q": "How many seats are needed for majority in Lok Sabha?",
+    "common_doubt_a": "A simple majority requires at least 272 out of 543 elected seats.",
+    "key_facts": [
+      "272 seats needed for LS majority",
+      "President appoints PM",
+      "Coalition = alliance of parties",
+      "Term of Lok Sabha is 5 years"
+    ],
+    "connected_to": "End of Journey",
+    "mini_quiz": {
+      "question": "How many seats does a party need to win an outright majority in the 543-seat Lok Sabha?",
+      "options": ["250 seats", "272 seats", "300 seats", "321 seats"],
+      "correct": 1,
+      "explanation": "A simple majority in the Lok Sabha requires winning more than half of 543 seats = at least 272 seats."
+    }
+  }
+]

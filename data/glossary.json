@@ -1,0 +1,219 @@
+[
+  {
+    "term": "Affidavit",
+    "definition": "A legal document (Form 26) submitted by a candidate disclosing their educational background, assets, liabilities, and criminal record (if any). It is made public for transparency.",
+    "example": "Candidates must file an affidavit to ensure voters know their history.",
+    "category": "Legal",
+    "first_letter": "A"
+  },
+  {
+    "term": "Alliance",
+    "definition": "An agreement between two or more political parties to work together, usually to contest elections or form a government.",
+    "example": "Pre-poll alliances help parties pool their vote bases.",
+    "category": "Politics",
+    "first_letter": "A"
+  },
+  {
+    "term": "Ballot",
+    "definition": "A system of voting in secret. Historically done with paper, now primarily done through Electronic Voting Machines (EVMs) in India.",
+    "example": "The secret ballot is a pillar of Indian democracy.",
+    "category": "Voting",
+    "first_letter": "B"
+  },
+  {
+    "term": "BLO (Booth Level Officer)",
+    "definition": "A local government officer who works on behalf of the ECI to maintain and update the voter list for a specific polling booth.",
+    "example": "The BLO visited my house to verify my voter registration details.",
+    "category": "Personnel",
+    "first_letter": "B"
+  },
+  {
+    "term": "By-election",
+    "definition": "An election held to fill a vacancy caused by the death, resignation, or disqualification of an elected member before the end of their term.",
+    "example": "A by-election was held after the MP resigned to join the state assembly.",
+    "category": "Elections",
+    "first_letter": "B"
+  },
+  {
+    "term": "Campaign",
+    "definition": "The period before an election when candidates and parties reach out to voters through rallies, speeches, and advertisements to seek their support.",
+    "example": "The campaign trail across the state saw many large rallies.",
+    "category": "Politics",
+    "first_letter": "C"
+  },
+  {
+    "term": "Candidate",
+    "definition": "An individual who stands for election to represent a constituency in a legislative body like the Lok Sabha or Vidhan Sabha.",
+    "example": "There were 15 candidates contesting from our constituency.",
+    "category": "Politics",
+    "first_letter": "C"
+  },
+  {
+    "term": "Coalition",
+    "definition": "A government formed by an alliance of multiple political parties when no single party wins a clear majority of seats.",
+    "example": "A coalition government requires consensus among all allied parties.",
+    "category": "Government",
+    "first_letter": "C"
+  },
+  {
+    "term": "Constituency",
+    "definition": "A specific geographical area defined for electoral purposes, which elects one representative to a legislative body.",
+    "example": "Each voter belongs to one Lok Sabha and one Vidhan Sabha constituency.",
+    "category": "Basics",
+    "first_letter": "C"
+  },
+  {
+    "term": "Counting",
+    "definition": "The process of tallying the votes recorded in EVMs and postal ballots to determine the winner of an election.",
+    "example": "Counting began at 8 AM across all centers simultaneously.",
+    "category": "Elections",
+    "first_letter": "C"
+  },
+  {
+    "term": "ECI",
+    "definition": "The Election Commission of India, an independent constitutional body responsible for conducting free and fair elections in India.",
+    "example": "The ECI announced the 7-phase schedule for the general elections.",
+    "category": "Institution",
+    "first_letter": "E"
+  },
+  {
+    "term": "Electoral Roll",
+    "definition": "The official list of all citizens who are registered and eligible to vote in a particular constituency. Also called the Voter List.",
+    "example": "Is your name on the Electoral Roll for this booth?",
+    "category": "Basics",
+    "first_letter": "E"
+  },
+  {
+    "term": "EVM",
+    "definition": "Electronic Voting Machine, a standalone device used to record and count votes electronically. It is secure and fast.",
+    "example": "EVMs have simplified the voting and counting process in India.",
+    "category": "Technology",
+    "first_letter": "E"
+  },
+  {
+    "term": "EPIC",
+    "definition": "Elector's Photo Identity Card, commonly known as the Voter ID card. It serves as identity and address proof for voters.",
+    "example": "I presented my EPIC at the polling station to get my finger inked.",
+    "category": "Basics",
+    "first_letter": "E"
+  },
+  {
+    "term": "Floor Test",
+    "definition": "A trust vote in the legislature to prove that the government has the support of a majority of the members.",
+    "example": "The Governor called for a floor test within 24 hours.",
+    "category": "Politics",
+    "first_letter": "F"
+  },
+  {
+    "term": "Hung Parliament",
+    "definition": "A situation where no single political party or pre-poll alliance wins enough seats to form a majority on its own.",
+    "example": "A hung parliament often leads to intense post-poll negotiations.",
+    "category": "Politics",
+    "first_letter": "H"
+  },
+  {
+    "term": "MCC",
+    "definition": "Model Code of Conduct, a set of ethical guidelines for parties and candidates enforced by ECI from the date of election announcement.",
+    "example": "The MCC prevents the ruling party from using government cars for rallies.",
+    "category": "Rules",
+    "first_letter": "M"
+  },
+  {
+    "term": "Manifesto",
+    "definition": "A public declaration of policies and goals issued by a political party before an election to explain what they will do if elected.",
+    "example": "The party's manifesto promised new infrastructure and jobs.",
+    "category": "Politics",
+    "first_letter": "M"
+  },
+  {
+    "term": "Margin",
+    "definition": "The difference in the number of votes between the winning candidate and the runner-up.",
+    "example": "The candidate won by a narrow margin of just 500 votes.",
+    "category": "Elections",
+    "first_letter": "M"
+  },
+  {
+    "term": "MLA",
+    "definition": "Member of Legislative Assembly, a representative elected by voters to the state's Vidhan Sabha.",
+    "example": "The MLA raised the issue of water shortage in the assembly.",
+    "category": "Personnel",
+    "first_letter": "M"
+  },
+  {
+    "term": "MP",
+    "definition": "Member of Parliament, a representative elected to the Lok Sabha or Rajya Sabha at the national level.",
+    "example": "The MP represents our district in the Parliament in Delhi.",
+    "category": "Personnel",
+    "first_letter": "M"
+  },
+  {
+    "term": "Nomination",
+    "definition": "The formal process where a person applies to be a candidate in an election by filing papers and paying a deposit.",
+    "example": "Today is the last date for filing nominations for the third phase.",
+    "category": "Elections",
+    "first_letter": "N"
+  },
+  {
+    "term": "NOTA",
+    "definition": "None Of The Above, an option on the EVM for voters who do not want to vote for any of the listed candidates.",
+    "example": "If you don't like any candidate, you can press the NOTA button.",
+    "category": "Voting",
+    "first_letter": "N"
+  },
+  {
+    "term": "Opposition",
+    "definition": "The parties in the legislature that are not part of the government, responsible for questioning and checking the ruling party.",
+    "example": "The Opposition demanded a debate on the new bill.",
+    "category": "Politics",
+    "first_letter": "O"
+  },
+  {
+    "term": "Polling Station",
+    "definition": "The location (often a school or community hall) where voters go to cast their ballots on election day.",
+    "example": "My polling station is just two blocks away from my home.",
+    "category": "Voting",
+    "first_letter": "P"
+  },
+  {
+    "term": "Returning Officer",
+    "definition": "A government official appointed by ECI for a constituency, responsible for overseeing the entire election process there.",
+    "example": "The Returning Officer declared the final results after the count.",
+    "category": "Personnel",
+    "first_letter": "R"
+  },
+  {
+    "term": "Scrutiny",
+    "definition": "The process where the Returning Officer examines all nomination papers to ensure they are valid and legal.",
+    "example": "Many nominations were rejected during the scrutiny phase.",
+    "category": "Legal",
+    "first_letter": "S"
+  },
+  {
+    "term": "Silent Period",
+    "definition": "The 48-hour window before the end of polling when all active campaigning must stop by law.",
+    "example": "The silent period allows voters to decide without campaign noise.",
+    "category": "Rules",
+    "first_letter": "S"
+  },
+  {
+    "term": "Turnout",
+    "definition": "The percentage of eligible voters who actually cast their vote in an election.",
+    "example": "The voter turnout in the 2024 elections was record-breaking.",
+    "category": "Elections",
+    "first_letter": "T"
+  },
+  {
+    "term": "VVPAT",
+    "definition": "Voter Verified Paper Audit Trail, a device that prints a paper slip confirming the vote cast on the EVM.",
+    "example": "VVPAT slips are used for sample verification of EVM results.",
+    "category": "Technology",
+    "first_letter": "V"
+  },
+  {
+    "term": "Whip",
+    "definition": "A direction issued by a political party to its members in the legislature on how to vote on a specific issue.",
+    "example": "Defying the party whip can lead to disqualification from the house.",
+    "category": "Rules",
+    "first_letter": "W"
+  }
+]
