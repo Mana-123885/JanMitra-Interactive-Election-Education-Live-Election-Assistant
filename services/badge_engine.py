@@ -1,4 +1,4 @@
-import customtkinter as ctk
+
 from core.config import BADGES
 from core.database import (
     get_profile, get_earned_badges, get_stages_explored, 

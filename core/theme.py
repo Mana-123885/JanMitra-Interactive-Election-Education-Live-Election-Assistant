@@ -1,4 +1,3 @@
-import customtkinter as ctk
 from core.database import update_profile, get_profile
 
 class ThemeManager:
@@ -11,7 +10,6 @@ class ThemeManager:
     
     def set_theme(self, mode):
         """mode: 'light' or 'dark'"""
-        ctk.set_appearance_mode(mode)
         update_profile(theme=mode)
         
     def get_current_theme(self):
