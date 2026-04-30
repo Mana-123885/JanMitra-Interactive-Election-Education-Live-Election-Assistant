@@ -2,14 +2,22 @@
   {
     "id": 1,
     "myth": "Voters directly elect the Prime Minister of India.",
+    "myth_hi": "मतदाता सीधे भारत के प्रधानमंत्री का चुनाव करते हैं।",
+    "myth_mr": "मतदार थेट भारताच्या पंतप्रधानांची निवड करतात.",
     "fact": "Citizens elect their local Member of Parliament (MP). The party or alliance with a majority in the Lok Sabha then chooses their leader to be appointed as PM by the President.",
+    "fact_hi": "नागरिक अपने स्थानीय संसद सदस्य (MP) को चुनते हैं। लोकसभा में बहुमत वाला दल या गठबंधन फिर राष्ट्रपति द्वारा पीएम के रूप में नियुक्त किए जाने वाले अपने नेता को चुनता है।",
+    "fact_mr": "नागरिक त्यांच्या स्थानिक खासदार (MP) निवडतात. लोकसभेतील बहुमतातील पक्ष किंवा युती नंतर राष्ट्रपतींद्वारे पंतप्रधान म्हणून नियुक्त होण्यासाठी त्यांचा नेता निवडते.",
     "category": "Leaders",
     "xp_reward": 5
   },
   {
     "id": 2,
     "myth": "All Indian elections (National, State, Local) happen on the same day.",
+    "myth_hi": "सभी भारतीय चुनाव (राष्ट्रीय, राज्य, स्थानीय) एक ही दिन होते हैं।",
+    "myth_mr": "सर्व भारतीय निवडणुका (राष्ट्रीय, राज्य, स्थानिक) एकाच दिवशी होतात.",
     "fact": "No, they usually happen separately based on when the 5-year term of that specific body ends. There are discussions about 'One Nation, One Election', but it's not current law.",
+    "fact_hi": "नहीं, वे आमतौर पर इस आधार पर अलग-अलग होते हैं कि उस विशिष्ट निकाय का 5 साल का कार्यकाल कब समाप्त होता है। 'एक राष्ट्र, एक चुनाव' के बारे में चर्चाएं हैं, लेकिन यह वर्तमान कानून नहीं है।",
+    "fact_mr": "नाही, त्या सहसा त्या विशिष्ट संस्थेचा ५ वर्षांचा कार्यकाळ कधी संपतो यावर आधारित स्वतंत्रपणे होतात. 'एक राष्ट्र, एक निवडणूक' बद्दल चर्चा सुरू आहे, परंतु तो सध्याचा कायदा नाही.",
     "category": "Basics",
     "xp_reward": 5
   },

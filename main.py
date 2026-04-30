@@ -1,123 +1,174 @@
-import customtkinter as ctk
-import sys
+from flask import Flask, render_template, jsonify, request
+from flask_cors import CORS
 import os
+import sys
 
 # Add project root to sys.path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from core.config import COLORS, APP_NAME
-from core.database import get_profile
-from core.theme import theme_manager
-from core.language import lang
-from core.navigation import NavigationManager
+from core.config import COLORS, APP_NAME, LEVELS, BADGES
+from core.database import (
+    get_profile, update_profile, get_quiz_history, get_best_score,
+    save_quiz_result, mark_stage_explored, get_stages_explored,
+    mark_myth_revealed, get_myths_revealed, get_earned_badges,
+    earn_badge, add_bookmark, get_bookmarks, remove_bookmark,
+    save_chat_message, get_chat_history, clear_chat_history,
+    mark_glossary_read, reset_all_data, add_xp, get_level
+)
+from core.language import TRANSLATIONS
+from services.live_data import live_data_service
 
-from ui.splash import SplashScreen
-from ui.home import HomeScreen
-from ui.learn import LearnScreen
-from ui.election_types import ElectionTypesScreen
-from ui.chatbot_screen import ChatbotScreen
-from ui.quiz_screen import QuizScreen
-from ui.myth_fact import MythFactScreen
-from ui.glossary_screen import GlossaryScreen
-from ui.live_updates import LiveUpdatesScreen
-from ui.profile_screen import ProfileScreen
-from ui.settings_screen import SettingsScreen
-from ui.polling_simulator import PollingSimulatorScreen
-from ui.components import make_nav_button
+app = Flask(__name__)
+CORS(app)
 
-class App(ctk.CTk):
-    def __init__(self):
-        super().__init__()
-        
-        # Load theme from DB
-        profile = get_profile()
-        theme_manager.set_theme(profile.get('theme', 'dark'))
-        lang.set_language(profile.get('language', 'en'))
-        
-        self.title(APP_NAME)
-        self.geometry("1100x750")
-        self.configure(fg_color=COLORS[ctk.get_appearance_mode()]["bg"])
-        
-        self.nav = NavigationManager(self)
-        
-        # Sidebar (Initially hidden for splash/onboarding)
-        self.sidebar = ctk.CTkFrame(self, width=240, corner_radius=0, fg_color=COLORS[ctk.get_appearance_mode()]["surface"])
-        self.nav.set_sidebar(self)
-        
-        self.nav_btns = {}
-        self.create_sidebar_content()
-        
-        # Start with Splash
-        self.nav.switch_screen(SplashScreen)
-        
-    def create_sidebar_content(self):
-        mode = ctk.get_appearance_mode()
-        
-        # App Logo/Name
-        logo_frame = ctk.CTkFrame(self.sidebar, fg_color="transparent")
-        logo_frame.pack(fill="x", pady=30, padx=20)
-        ctk.CTkLabel(logo_frame, text="🗳️", font=("Arial", 36)).pack(side="left")
-        ctk.CTkLabel(logo_frame, text=APP_NAME, font=("Inter", 24, "bold"), text_color=COLORS[mode]["primary"]).pack(side="left", padx=10)
-        
-        # Nav Buttons
-        self.add_nav_item("home", "🏠", lang.get("nav_home"), HomeScreen)
-        self.add_nav_item("learn", "📚", lang.get("nav_learn"), LearnScreen)
-        self.add_nav_item("types", "🏰", lang.get("nav_types"), ElectionTypesScreen)
-        self.add_nav_item("quiz", "🎯", lang.get("nav_quiz"), QuizScreen)
-        self.add_nav_item("simulator", "🗳️", "Polling Simulator", PollingSimulatorScreen)
-        self.add_nav_item("chat", "🤖", lang.get("nav_chatbot"), ChatbotScreen)
-        self.add_nav_item("live", "📈", lang.get("nav_live"), LiveUpdatesScreen)
-        self.add_nav_item("myths", "💥", lang.get("nav_myths"), MythFactScreen)
-        self.add_nav_item("glossary", "📖", lang.get("nav_glossary"), GlossaryScreen)
-        
-        # Bottom spacer
-        ctk.CTkLabel(self.sidebar, text="", height=1).pack(fill="y", expand=True)
-        
-        self.add_nav_item("profile", "👤", lang.get("nav_profile"), ProfileScreen)
-        self.add_nav_item("settings", "⚙️", lang.get("nav_settings"), SettingsScreen)
-        
-    def add_nav_item(self, id, emoji, label, screen_class):
-        btn = make_nav_button(self.sidebar, emoji, label, False, lambda: self.nav.switch_screen(screen_class))
-        btn.pack(fill="x", padx=15, pady=2)
-        self.nav_btns[id] = btn
+# --- WEB ROUTES ---
 
-    def set_active(self, nav_id):
-        for id, btn in self.nav_btns.items():
-            is_active = (id == nav_id)
-            mode = ctk.get_appearance_mode()
-            bg = COLORS[mode]["primary"] if is_active else "transparent"
-            fg = COLORS[mode]["text1"] if is_active else COLORS[mode]["text2"]
-            btn.configure(fg_color=bg, text_color=fg)
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-    def show_sidebar(self):
-        # Refresh sidebar text if language changed
-        for widget in self.sidebar.winfo_children(): widget.destroy()
-        self.create_sidebar_content()
-        self.sidebar.pack(side="left", fill="y")
+# --- API ENDPOINTS ---
 
-    def hide_sidebar(self):
-        self.sidebar.pack_forget()
+@app.route('/api/config')
+def get_config():
+    return jsonify({
+        "colors": COLORS,
+        "app_name": APP_NAME,
+        "levels": LEVELS,
+        "badges": BADGES,
+        "translations": TRANSLATIONS
+    })
 
-# Override switch_screen in NavigationManager to handle sidebar visibility
-def patched_switch(self, screen_class, *args, **kwargs):
-    if self.current_frame:
-        self.current_frame.destroy()
-    
-    # Hide sidebar for splash and onboarding
-    if screen_class in [SplashScreen, "OnboardingScreen"]: # Simplified check
-        self.root.hide_sidebar()
-    else:
-        # Check if onboarding screen by name because of circular imports
-        if screen_class.__name__ == "OnboardingScreen":
-            self.root.hide_sidebar()
-        else:
-            self.root.show_sidebar()
-            
-    self.current_frame = screen_class(self.root, self, *args, **kwargs)
-    self.current_frame.pack(side="right", fill="both", expand=True)
-    
-NavigationManager.switch_screen = patched_switch
+@app.route('/api/profile', methods=['GET', 'POST'])
+def profile_api():
+    if request.method == 'POST':
+        data = request.json
+        update_profile(**data)
+        return jsonify({"status": "success"})
+    return jsonify(get_profile())
 
-if __name__ == "__main__":
-    app = App()
-    app.mainloop()
+@app.route('/api/xp/add', methods=['POST'])
+def add_xp_api():
+    data = request.json
+    amount = data.get('amount', 0)
+    new_xp = add_xp(amount)
+    level = get_level(new_xp)
+    return jsonify({"xp": new_xp, "level": level})
+
+@app.route('/api/quiz/history')
+def quiz_history_api():
+    return jsonify(get_quiz_history())
+
+@app.route('/api/quiz/save', methods=['POST'])
+def save_quiz_api():
+    data = request.json
+    save_quiz_result(
+        data['category'], data['score'], data['total'],
+        data['xp'], data.get('badge', ''), data.get('time_taken', 0)
+    )
+    return jsonify({"status": "success"})
+
+@app.route('/api/learning/progress')
+def learning_progress_api():
+    return jsonify({
+        "explored_stages": get_stages_explored(),
+        "revealed_myths": get_myths_revealed()
+    })
+
+@app.route('/api/learning/explore', methods=['POST'])
+def explore_stage_api():
+    data = request.json
+    mark_stage_explored(data['stage_id'], data['stage_name'])
+    return jsonify({"status": "success"})
+
+@app.route('/api/myths/reveal', methods=['POST'])
+def reveal_myth_api():
+    data = request.json
+    mark_myth_revealed(data['myth_id'])
+    return jsonify({"status": "success"})
+
+@app.route('/api/badges')
+def badges_api():
+    return jsonify(get_earned_badges())
+
+@app.route('/api/badges/earn', methods=['POST'])
+def earn_badge_api():
+    data = request.json
+    newly_earned = earn_badge(data['badge_id'])
+    return jsonify({"newly_earned": newly_earned})
+
+@app.route('/api/bookmarks', methods=['GET', 'POST', 'DELETE'])
+def bookmarks_api():
+    if request.method == 'POST':
+        data = request.json
+        add_bookmark(data['type'], data['id'], data['title'], data['content'])
+        return jsonify({"status": "success"})
+    elif request.method == 'DELETE':
+        item_id = request.args.get('id')
+        remove_bookmark(item_id)
+        return jsonify({"status": "success"})
+    return jsonify(get_bookmarks())
+
+@app.route('/api/chat', methods=['GET', 'POST', 'DELETE'])
+def chat_api():
+    if request.method == 'POST':
+        data = request.json
+        save_chat_message(data['role'], data['message'])
+        return jsonify({"status": "success"})
+    elif request.method == 'DELETE':
+        clear_chat_history()
+        return jsonify({"status": "success"})
+    return jsonify(get_chat_history())
+
+@app.route('/api/learning/content')
+def learning_content_api():
+    with open("data/election_content.json", "r", encoding="utf-8") as f:
+        import json
+        return jsonify(json.load(f))
+
+@app.route('/api/learning/myths')
+def myths_api():
+    with open("data/myths_facts.json", "r", encoding="utf-8") as f:
+        import json
+        return jsonify(json.load(f))
+
+@app.route('/api/learning/glossary')
+def glossary_api():
+    with open("data/glossary.json", "r", encoding="utf-8") as f:
+        import json
+        return jsonify(json.load(f))
+
+@app.route('/api/quiz/data')
+def quiz_data_api():
+    with open("data/quiz_data.json", "r", encoding="utf-8") as f:
+        import json
+        return jsonify(json.load(f))
+
+@app.route('/api/chat/faq')
+def chat_faq_api():
+    with open("data/chatbot_faq.json", "r", encoding="utf-8") as f:
+        import json
+        return jsonify(json.load(f))
+
+@app.route('/api/live-data')
+def live_data_api():
+    return jsonify({
+        "updates": live_data_service.get_updates(),
+        "last_updated": live_data_service.get_last_updated_string()
+    })
+
+@app.route('/api/glossary/read', methods=['POST'])
+def glossary_read_api():
+    data = request.json
+    mark_glossary_read(data['term'])
+    return jsonify({"status": "success"})
+
+@app.route('/api/reset', methods=['POST'])
+def reset_api():
+    reset_all_data()
+    return jsonify({"status": "success"})
+
+if __name__ == '__main__':
+    # Default to port 8080 for Google Cloud Shell compatibility
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port, debug=True)

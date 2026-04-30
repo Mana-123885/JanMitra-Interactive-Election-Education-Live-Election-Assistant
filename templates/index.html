@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JanMitra - Interactive Election Education</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="JanMitra: Your interactive companion for election education, real-time tracking, and civic engagement.">
+    <meta name="keywords" content="election, voting, india, democracy, civic education, janmitra">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dark-theme">
+    <div id="app-container">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="hidden">
+            <div class="sidebar-header">
+                <span class="logo-emoji">🗳️</span>
+                <h1 id="app-title">JanMitra</h1>
+            </div>
+            
+            <nav id="main-nav">
+                <!-- Nav items will be injected by JS -->
+            </nav>
+            
+            <div class="sidebar-footer">
+                <nav id="bottom-nav">
+                    <!-- Profile/Settings will be injected here -->
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <div id="screen-container">
+                <!-- Screens will be injected here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Notification/XP Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

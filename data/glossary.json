@@ -56,8 +56,21 @@
     "first_letter": "C"
   },
   {
+    "term": "Universal Adult Franchise",
+    "term_hi": "सार्वभौम वयस्क मताधिकार",
+    "term_mr": "सार्वत्रिक प्रौढ मताधिकार",
+    "definition": "The right of all adult citizens to vote regardless of their wealth, income, gender, social status, race, ethnicity, or any other restriction.",
+    "definition_hi": "धन, आय, लिंग, सामाजिक स्थिति, जाति, जातीयता या किसी अन्य प्रतिबंध की परवाह किए बिना सभी वयस्क नागरिकों का वोट देने का अधिकार।",
+    "definition_mr": "संपत्ती, उत्पन्न, लिंग, सामाजिक दर्जा किंवा इतर कोणत्याही निर्बंधाशिवाय सर्व प्रौढ नागरिकांना मतदानाचा अधिकार.",
+    "category": "Fundamental"
+  },
+  {
     "term": "Constituency",
-    "definition": "A specific geographical area defined for electoral purposes, which elects one representative to a legislative body.",
+    "term_hi": "निर्वाचन क्षेत्र",
+    "term_mr": "मतदारसंघ",
+    "definition": "A body of voters in a specified area who elect a representative to a legislative body.",
+    "definition_hi": "एक निर्दिष्ट क्षेत्र में मतदाताओं का एक निकाय जो एक विधायी निकाय के लिए एक प्रतिनिधि का चुनाव करते हैं।",
+    "definition_mr": "एका विशिष्ट क्षेत्रातील मतदारांचा समूह जो विधानमंडळासाठी प्रतिनिधी निवडतो.",
     "example": "Each voter belongs to one Lok Sabha and one Vidhan Sabha constituency.",
     "category": "Basics",
     "first_letter": "C"
