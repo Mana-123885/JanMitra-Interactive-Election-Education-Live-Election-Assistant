@@ -1,11 +1,14 @@
 from flask import Flask, render_template, jsonify, request
 from flask_cors import CORS
 import os
+import sys
 
+# Add project root to sys.path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from core.config import COLORS, APP_NAME, LEVELS, BADGES
 from core.database import (
-    get_profile, update_profile, get_quiz_history,
+    get_profile, update_profile, get_quiz_history, get_best_score,
     save_quiz_result, mark_stage_explored, get_stages_explored,
     mark_myth_revealed, get_myths_revealed, get_earned_badges,
     earn_badge, add_bookmark, get_bookmarks, remove_bookmark,

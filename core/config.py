@@ -38,6 +38,8 @@ COLORS = {
         "card_hover":   "#F5F3FF",
     }
 }
+COLORS["Dark"] = COLORS["dark"]
+COLORS["Light"] = COLORS["light"]
 
 LEVELS = [
     {"level":1, "title":"Nagarik Seedha",    "hi":"नागरिक सीधा",    "mr":"नागरिक साधा",    "xp":0,    "emoji":"🌱", "color":"#92400E", "desc":"A curious new citizen. Just starting the journey."},
@@ -74,3 +76,9 @@ BADGES = [
 ]
 
 APP_NAME = "JanMitra"
+APP_NAME_HI = "जनमित्र"
+APP_NAME_MR = "जनमित्र"
+
+TAGLINE = "Mera Chunav, Meri Awaaz"
+TAGLINE_HI = "मेरा चुनाव, मेरी आवाज़"
+TAGLINE_MR = "माझे निवडणूक, माझा आवाज"
