@@ -84,24 +84,3 @@ TRANSLATIONS = {
     }
 }
 
-class LanguageManager:
-    _instance = None
-    
-    def __new__(cls):
-        if cls._instance is None:
-            cls._instance = super(LanguageManager, cls).__new__(cls)
-            cls._instance.current_lang = "en"
-        return cls._instance
-    
-    def set_language(self, lang_code):
-        # Hardcoded to English
-        self.current_lang = "en"
-            
-    def get(self, key, **kwargs):
-        text = TRANSLATIONS["en"].get(key, key)
-        try:
-            return text.format(**kwargs)
-        except:
-            return text
-
-lang = LanguageManager()

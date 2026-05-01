@@ -26,8 +26,6 @@ def init_db():
         xp INTEGER DEFAULT 0,
         streak INTEGER DEFAULT 0,
         last_active TEXT DEFAULT '',
-        chatbot_questions_asked INTEGER DEFAULT 0,
-        glossary_terms_read INTEGER DEFAULT 0,
         languages_used TEXT DEFAULT 'en'
     )''')
     
@@ -166,13 +164,6 @@ def get_quiz_history():
     conn.close()
     return [dict(row) for row in rows]
 
-def get_best_score(category):
-    conn = sqlite3.connect(DB_PATH)
-    cursor = conn.cursor()
-    cursor.execute("SELECT MAX(score) FROM quiz_history WHERE category = ?", (category,))
-    score = cursor.fetchone()[0]
-    conn.close()
-    return score if score is not None else 0
 
 def mark_stage_explored(stage_id, stage_name):
     conn = sqlite3.connect(DB_PATH)
@@ -278,25 +269,7 @@ def mark_glossary_read(term):
     conn.commit()
     conn.close()
     
-    # Increment global count in profile
-    profile = get_profile()
-    update_profile(glossary_terms_read = profile['glossary_terms_read'] + 1)
 
-def get_glossary_read_count():
-    conn = sqlite3.connect(DB_PATH)
-    cursor = conn.cursor()
-    cursor.execute("SELECT COUNT(*) FROM glossary_read")
-    count = cursor.fetchone()[0]
-    conn.close()
-    return count
-
-def increment_chatbot_questions():
-    profile = get_profile()
-    update_profile(chatbot_questions_asked = profile['chatbot_questions_asked'] + 1)
-
-def get_chatbot_questions_count():
-    profile = get_profile()
-    return profile['chatbot_questions_asked']
 
 def reset_all_data():
     conn = sqlite3.connect(DB_PATH)
@@ -308,8 +281,6 @@ def reset_all_data():
         onboarding_done = 0, 
         xp = 0, 
         streak = 0, 
-        chatbot_questions_asked = 0, 
-        glossary_terms_read = 0,
         last_active = '',
         languages_used = 'en'
         WHERE id = 1
